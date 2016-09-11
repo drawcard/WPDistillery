@@ -36,9 +36,10 @@ db:
 #################################################################
 
 wpsettings:
-  url: 192.168.33.10/clients/client-name/www/ # Edit this
-  title: Client Name # Edit this
-  description: Client Description # Edit this
+  # NOTE: Remember to edit the next three settings below!
+  url: 192.168.33.10/clients/client-name/www/ 
+  title: Client Name 
+  description: Client Description 
   permalink_structure: "/%year%/%monthnum%/%day%/%postname%/"
   thumbnail_width: 400
   thumbnail_height: 400
@@ -59,7 +60,8 @@ wpsettings:
 theme:
   name: Sage
   rename: "drawcard-theme"
-  url: "https://github.com/roots/sage/archive/master.zip" # Update this to drawcard's sage v9 branch when ready
+  # TODO: Update this URL to drawcard's sage v9 branch when ready
+  url: "https://github.com/roots/sage/archive/master.zip" 
   # add branch (e.g. master) or leave empty ("") if theme is not downloaded from a git repository
   source_branch: master
 
@@ -72,18 +74,21 @@ plugins_active:
   - enable-media-replace
   - simple-page-ordering
   - user-switching
-  - autodescription #The SEO Framework Plugin
+  #The SEO Framework Plugin
+  - autodescription 
   - font-awesome-shortcodes
   - tinymce-advanced
   - contact-form-7
   - bwp-recaptcha
   - coming-soon
-  - "https://github.com/roots/roots-wrapper-toolbar/archive/sagesupport.zip" # Sage Theme Toolbar
+  # Sage Theme Toolbar
+  - "https://github.com/roots/roots-wrapper-toolbar/archive/sagesupport.zip" 
   - "https://github.com/afragen/github-updater/archive/master.zip"
   - "https://github.com/wp-sync-db/wp-sync-db/archive/master.zip"
   - "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
   - "https://github.com/wp-sync-db/wp-sync-db-cli/archive/master.zip"
-  - "https://github.com/wp-sync-db/wp-sync-db-multisite-tools/archive/delicious-brains.zip" #Update this to master branch when available
+  # TODO: Update this plugin to master branch when available
+  - "https://github.com/wp-sync-db/wp-sync-db-multisite-tools/archive/delicious-brains.zip" 
 
 # plugins to install BUT leave deactivated
 plugins_inactive:
