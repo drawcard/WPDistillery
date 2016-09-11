@@ -36,10 +36,10 @@ db:
 #################################################################
 
 wpsettings:
-  url: wpdistillery.dev
-  title: Example Title
-  description: Example Description
-  permalink_structure: "/%postname%/"
+  url: 192.168.33.10/clients/client-name/www/ # Edit this
+  title: Client Name # Edit this
+  description: Client Description # Edit this
+  permalink_structure: "/%year%/%monthnum%/%day%/%postname%/"
   thumbnail_width: 400
   thumbnail_height: 400
   medium_width: 700
