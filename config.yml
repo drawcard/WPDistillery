@@ -23,7 +23,7 @@ timezone: "Australia/Adelaide"
 admin:
   user: drawcard
   password: admin
-  email: admn@drawcard.com.au
+  email: admin@drawcard.com.au
 
 # scotch box db access
 db:
@@ -88,6 +88,7 @@ plugins_active:
 # plugins to install BUT leave deactivated
 plugins_inactive:
   - pods
+  - elementor
   - adminimize
   - regenerate-thumbnails
   - admin-menu-editor
