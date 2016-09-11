@@ -13,17 +13,17 @@
 #################################################################
 
 # WordPress folder
-wpfolder: public
+wpfolder: www
 
 # language/timezone
-wplocale: en_US
-timezone: "America/New_York"
+wplocale: en_AU
+timezone: "Australia/Adelaide"
 
 # admin user settings
 admin:
-  user: admin
+  user: drawcard
   password: admin
-  email: mail@domain.tld
+  email: admn@drawcard.com.au
 
 # scotch box db access
 db:
@@ -40,26 +40,26 @@ wpsettings:
   title: Example Title
   description: Example Description
   permalink_structure: "/%postname%/"
-  thumbnail_width: 150
-  thumbnail_height: 150
-  medium_width: 300
-  medium_height: 300
-  large_width: 1024
-  large_height: 1024
+  thumbnail_width: 400
+  thumbnail_height: 400
+  medium_width: 700
+  medium_height: 700
+  large_width: 1200
+  large_height: 1200
   # use page as frontpage
   page_on_front: true
-    frontpage_name: Example Front Page
+    frontpage_name: Homepage
   # automatic converttion of smilies
-  convert_smilies: false
+  convert_smilies: true
 
 # THEME
 #################################################################
 
 # theme to install, choose new name in 'rename' or leave empty
 theme:
-  name: WPSeed
-  rename: ""
-  url: "https://github.com/flurinduerst/WPSeed/archive/master.zip"
+  name: Sage
+  rename: "drawcard-theme"
+  url: "https://github.com/roots/sage/archive/master.zip" # Update this to drawcard's sage v9 branch when ready
   # add branch (e.g. master) or leave empty ("") if theme is not downloaded from a git repository
   source_branch: master
 
@@ -68,29 +68,32 @@ theme:
 
 # plugins to install & activate
 plugins_active:
-  - disable-comments
   - duplicate-post
   - enable-media-replace
-  - favicon-by-realfavicongenerator
-  - regenerate-thumbnails
   - simple-page-ordering
   - user-switching
-  - google-sitemap-generator
+  - autodescription #The SEO Framework Plugin
+  - font-awesome-shortcodes
+  - tinymce-advanced
+  - contact-form-7
+  - contact-form-7-recaptcha
+  - coming-soon
+  - "https://github.com/roots/roots-wrapper-toolbar/archive/sagesupport.zip" # Sage Theme Toolbar
+  - "https://github.com/afragen/github-updater/archive/master.zip"
+  - "https://github.com/wp-sync-db/wp-sync-db/archive/master.zip"
+  - "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
+  - "https://github.com/wp-sync-db/wp-sync-db-cli/archive/master.zip"
+  - "https://github.com/wp-sync-db/wp-sync-db-multisite-tools/archive/delicious-brains.zip" #Update this to master branch when available
 
-# plugins to install
+# plugins to install BUT leave deactivated
 plugins_inactive:
-  #development
-  - custom-post-type-ui
-  - search-and-replace
-  - capability-manager-enhanced
-  #administration
+  - pods
   - adminimize
+  - regenerate-thumbnails
   - admin-menu-editor
   - admin-menu-reorder
-  - wordpress-seo
-  #security/backup
-  - wp-security-audit-log
-  - backwpup
+  - fakerpress
+
 
 # WPDISTILLERY SETUP
 ####################################################################
