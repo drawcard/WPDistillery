@@ -76,7 +76,7 @@ plugins_active:
   - font-awesome-shortcodes
   - tinymce-advanced
   - contact-form-7
-  - contact-form-7-recaptcha
+  - bwp-recaptcha
   - coming-soon
   - "https://github.com/roots/roots-wrapper-toolbar/archive/sagesupport.zip" # Sage Theme Toolbar
   - "https://github.com/afragen/github-updater/archive/master.zip"
