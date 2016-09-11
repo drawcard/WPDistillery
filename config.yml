@@ -58,12 +58,11 @@ wpsettings:
 
 # theme to install, choose new name in 'rename' or leave empty
 theme:
-  name: Sage v8
-  rename: "sage-8-old"
-  # TODO: Update this URL to drawcard's sage v9 branch when ready
-  url: "https://github.com/roots/sage/archive/sage-8.zip" 
+  name: WPSeed
+  rename: ""
+  url: "https://github.com/flurinduerst/WPSeed/archive/master.zip"
   # add branch (e.g. master) or leave empty ("") if theme is not downloaded from a git repository
-  source_branch: sage-8
+  source_branch: master
 
 # PLUGINS
 #################################################################
