@@ -89,6 +89,8 @@ plugins_active:
 plugins_inactive:
   - pods
   - elementor
+  - wordfence
+  - wp-super-cache
   - adminimize
   - regenerate-thumbnails
   - admin-menu-editor
